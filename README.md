@@ -1,1 +1,2 @@
-# Rebbica007.github.io
+# GCI Prototype
+![Picture Demo](prototype_display.PNG)
