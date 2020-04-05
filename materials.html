@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="icon.ico">
+		<script type="text/javascript" src="table_script_materials.js"></script>
+		<title>Materials List</title>
+	</head>
+	<body>
+		<img src="logo.jpg"/>
+		<div id="navbar">
+			<ul>
+				<li><a href ="client.html">Clients</a></li>
+				<li><a href ="companieshelp.html">Companies and Subcontractors</a></li>
+				<li><a href ="index.html">Home</a></li>
+				<li><a href ="proposals.html">Proposals and Bills</a></li>
+			</ul>
+		</div>
+		<br>
+		<h1 id = "title">Grunewald Contracting's Materials List</h1>
+		<div id="wrapper">
+			<input type="text" id="myInput" onkeyup="myFunction()" onfocus="this.value=''" placeholder="Search for names..">
+			<table id="data_table">
+				<tr>
+					<th>Material name</th>
+					<th>Material type</th>
+					<th>Company purchased at</th>
+					<th>Price</th>
+					<th>Phone number</th>
+				</tr>
+
+				<tr id="row1">
+					<td id="name_row1">Double paned window</td>
+					<td id="type_row1">Window</td>
+					<td id="company_row1">Home Depot</td>
+					<td id="price_row1">$500 (5)</td>
+					<td id="phone_row1">(123) 456-7890</td>
+					<td>
+						<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+						<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+						<input type="button" id="del_button" value="Delete" class="delete" onclick="delete_row('1')">
+					</td>
+				</tr>
+
+				<tr id="row2">
+					<td id="name_row2">Bifold door</td>
+					<td id="type_row2">Door</td>
+					<td id="company_row2">Lowe's</td>
+					<td id="price_row2">$200 (7)</td>
+					<td id="phone_row2">(123) 456-7890</td>
+					<td>
+						<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+						<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+						<input type="button" id="del_button" value="Delete" class="delete" onclick="delete_row('2')">
+					</td>
+				</tr>
+
+				<tr id="row3">
+					<td id="name_row3">Steel Screws</td>
+					<td id="type_row3">Screws</td>
+					<td id="company_row3">Ace Hardware</td>
+					<td id="price_row3">$1.39 per lb</td>
+					<td id="phone_row3">(123) 456-7890</td>
+					<td>
+						<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+						<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+						<input type="button" id="del_button" value="Delete" class="delete" onclick="delete_row('3')">
+					</td>
+				</tr>
+
+				<tr>
+					<td><input type="text" id="new_name" placeholder="Last Name"></td>
+					<td><input type="text" id="new_type" placeholder="jsmith@example.com"></td>
+					<td><input type="text" id="new_company" placeholder="Company Example Inc."></td>
+					<td><input type="text" id="new_price" placeholder="$XX.XX (quantity) or per lb"></td>
+					<td><input type="text" id="new_phone" placeholder="(123) 456-7890"></td>
+					<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

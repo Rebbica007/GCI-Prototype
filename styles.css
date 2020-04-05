@@ -1,0 +1,81 @@
+body {
+  background-color: #FFFFFF;
+}
+
+#navbar {
+	font-family:sans-serif;
+	text-decoration:none;
+	color:black;
+}
+	
+#navbar ul {
+	font-size:20px;
+}
+	
+#navbar a {
+	text-decoration:none;
+	list-style:none;
+	margin-right:10px;
+	margin-bottom:5px;
+	color: green;	
+}
+	
+#navbar a:hover {
+	color:black;
+}
+	
+#navbar li {
+	margin-left:7px;
+	text-decoration:none;
+	list-style:none;
+	margin-bottom:5px;
+	display:inline;
+}
+
+#title {
+  color: #000000;
+  text-align: center;
+}
+
+#description {
+  color: red;
+}
+
+#myInput {
+  background-image: url('searchicon2.png'); /* Add a search icon to input */
+  background-position: 5px 5px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 18px; /* Increase font-size */
+  padding: 5px 20px 5px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#data_table {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#data_table th {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+  background-color: #f1f1f1;
+}
+
+#data_table td {
+  text-align: left; /* Left-align text */
+  padding: 5px; /* Add padding */
+}
+
+#data_table tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#data_table tr.header, #data_table tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
